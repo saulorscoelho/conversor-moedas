@@ -11,8 +11,8 @@ const img1 = document.getElementById('img1')
 const img2 = document.getElementById('img2')
 
 
-const dolar = 2 //5.88
-const euro = 4 //6.17
+const dolar = 5.88 //5.88
+const euro = 6.17 //6.17
 const real = 1
 
 
@@ -21,8 +21,8 @@ const converter = () => {
   const realToEuro = valor.value / euro
   const dolarToReal = valor.value * dolar
   const euroToReal = valor.value * euro
-  const dolarToEuro = valor.value / euro
-  const euroToDolar = valor.value * dolar
+  const dolarToEuro = (valor.value * dolar) / euro
+  const euroToDolar = (valor.value * euro) / dolar
 
   //OPÇÕES SELECIONADAS
   const moeda1 = selectFrom.options[selectFrom.selectedIndex].innerText
