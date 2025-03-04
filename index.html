@@ -22,7 +22,7 @@
           <label for="local-convert">Converter de:</label>
           <select name="local-convert" id="local-convert">
             <option value="real">R$ Real</option>
-            <option value="dolar">$ Dolar</option>
+            <option value="dolar">$ Dolar Americano</option>
             <option value="euro">€ Euro</option>
           </select>
         </section>
@@ -30,19 +30,21 @@
         <section class="foreign-currency">
           <label for="foreign-money">Converter para:</label>
           <select name="foreign-money" id="foreign-money">
-            <option value="dolar">$ Dolar</option>
+            <option value="dolar">$ Dolar Americano</option>
             <option value="euro">€ Euro</option>
             <option value="real">R$ Real</option>
           </select>
         </section>
 
         <section class="currency-value">
-          <label for="value">Valor</label>
-          <input type="text" id="value" name="value" placeholder="R$ 1.000,00">
+          <label for="valor">Valor</label>
+          <input type="text" id="valor" name="valor" placeholder="R$ 1.000,00">
         </section>
+      </div>
 
-        <button>Converter</button>
+      <button type="button" id="botao">Converter</button>
 
+      <div>
         <section class="result">
           <div class="local-value">
             <img id="img1" src="./assets/brasil.png" alt="bandeira-brasil" width="40">
@@ -56,12 +58,11 @@
             <span id="span2">$</span>
           </div>
         </section>
-
       </div>
 
     </div>
 
-    <script src="./scripts.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

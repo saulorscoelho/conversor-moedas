@@ -68,6 +68,11 @@ button {
   justify-self: center;
   margin: 10px 0;
   cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  background-color: darkblue;
 }
 
 .result {
@@ -101,4 +106,24 @@ span {
   color: #203599;
   font-weight: 600;
   font-size: 1.3rem;
+}
+
+@media (max-width:800px) and (max-height:700px) {
+  .container-interno {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+  }
+
+  .container {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+
+  }
+
+  button {
+    display: flex;
+    align-self: center;
+  }
 }
