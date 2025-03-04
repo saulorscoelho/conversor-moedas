@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Conversor de Moedas</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Convert Money</h1>
+    </header>
+    <div class="container-interno">
+      <div>
+        <section class="local-currency">
+          <label for="local-convert">Converter de:</label>
+          <select name="local-convert" id="local-convert">
+            <option value="real">R$ Real</option>
+            <option value="dolar">$ Dolar</option>
+            <option value="euro">€ Euro</option>
+          </select>
+        </section>
+
+        <section class="foreign-currency">
+          <label for="foreign-money">Converter para:</label>
+          <select name="foreign-money" id="foreign-money">
+            <option value="dolar">$ Dolar</option>
+            <option value="euro">€ Euro</option>
+            <option value="real">R$ Real</option>
+          </select>
+        </section>
+
+        <section class="currency-value">
+          <label for="value">Valor</label>
+          <input type="text" id="value" name="value" placeholder="R$ 1.000,00">
+        </section>
+
+        <button>Converter</button>
+
+        <section class="result">
+          <div class="local-value">
+            <img id="img1" src="./assets/brasil.png" alt="bandeira-brasil" width="40">
+            <p id="currency1">Real</p>
+            <span id="span1">R$</span>
+          </div>
+          <div class="seta"></div>
+          <div class="foreign-value">
+            <img id="img2" src="./assets/dolar.png" alt="bandeira-usa" width="40">
+            <p id="currency2">Dolar Americano</p>
+            <span id="span2">$</span>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

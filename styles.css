@@ -1,0 +1,104 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  align-content: center;
+  background-color: #ddd;
+}
+
+.container {
+  border: none;
+  width: 400px;
+  margin: 0px auto;
+  background-color: #eee;
+  border-radius: 4px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+
+}
+
+.container-interno {
+  padding: 20px;
+}
+
+header {
+  background-color: #203599;
+  border-radius: 4px 4px 0 0;
+  padding: 10px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+select {
+  appearance: none;
+}
+
+button {
+  background-color: #203599;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  justify-self: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.result {
+  border: 1px solid #203599;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.local-value {
+  margin-bottom: 20px;
+}
+
+.seta {
+  display: block;
+  border-top: 20px solid seagreen;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: .8rem;
+  color: #666;
+}
+
+span {
+  color: #203599;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
