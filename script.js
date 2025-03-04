@@ -11,12 +11,18 @@ const img1 = document.getElementById('img1')
 const img2 = document.getElementById('img2')
 
 
-const dolar = 5.88 //5.88
-const euro = 6.17 //6.17
-const real = 1
 
 
-const converter = () => {
+
+const converter = async () => {
+
+  //API COM VALORES DAS MOEDAS
+
+  const data = await fetch('https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL').then(response => response.json())
+
+  const dolar = data.USDBRL.high
+  const euro = data.EURBRL.high
+
   const realToDolar = valor.value / dolar
   const realToEuro = valor.value / euro
   const dolarToReal = valor.value * dolar
