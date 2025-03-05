@@ -24,6 +24,7 @@ body {
 
 .container-interno {
   padding: 20px;
+  justify-content: center;
 }
 
 header {
