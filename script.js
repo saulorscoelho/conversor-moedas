@@ -35,9 +35,9 @@ const converter = async () => {
   const moeda2 = selectTo.options[selectTo.selectedIndex].innerText
 
   //SRC IMAGENS
-  const imgReal = 'http://127.0.0.1:5500/assets/brasil.png'
-  const imgDolar = 'http://127.0.0.1:5500/assets/dolar.png'
-  const imgEuro = 'http://127.0.0.1:5500/assets/euro.png'
+  const imgReal = './assets/brasil.png'
+  const imgDolar = './assets/dolar.png'
+  const imgEuro = './assets/euro.png'
 
 
   //REAL TO DOLAR
